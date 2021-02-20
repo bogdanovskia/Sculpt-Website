@@ -1,0 +1,101 @@
+.accordion {
+  width: 100%;
+  margin: 24px 0;
+
+  .question {
+    width: 100%;
+    margin: 0;
+
+    .question-header {
+      background-color: rgba($color: $primary-color, $alpha: 0.2);
+      padding: 24px 32px;
+      margin-bottom: 8px;
+      border-left: 6px solid $primary-color-dark;
+      display: grid;
+      align-items: center;
+      grid-template-columns: auto 40px;
+      cursor: pointer;
+
+      h4 {
+        font-size: 1.8rem;
+        font-family: $main-font;
+        font-weight: 700;
+        color: $secondary-color;
+        margin: 0;
+        line-height: 2.4rem;
+      }
+
+      .plus-minus {
+        position: relative;
+        width: 16px;
+        height: 16px;
+        transform-origin: center;
+        -webkit-transform-origin: center;
+        @include transition(0.3s);
+
+        .line1 {
+          height: 2px;
+          width: 16px;
+          background-color: $primary-color-dark;
+          position: absolute;
+          left: 0;
+          top: 7px;
+          transform-origin: center;
+          -webkit-transform-origin: center;
+        }
+
+        .line2 {
+          width: 2px;
+          height: 16px;
+          background-color: $primary-color-dark;
+          position: absolute;
+          left: 7px;
+          top: 0;
+          transform-origin: center;
+          -webkit-transform-origin: center;
+        }
+      }
+    }
+
+    .question-body {
+      background-color: #fff;
+      border: 1px solid rgba($color: $primary-color-dark, $alpha: 0.3);
+      padding: 0 24px;
+      margin-left: 6px;
+      max-height: 0;
+      overflow: 0;
+      opacity: 0;
+      transition: max-height .5s cubic-bezier(0, 1, 0, 1);
+
+      p{
+        opacity: 0;
+        @include transition(.3s);
+        transition-delay: .4s;
+      }
+    }
+
+    &.opened {
+      .question-header {
+        .plus-minus {
+          @include transition(0.3s);
+          transform: rotate(90deg);
+
+          .line1 {
+            opacity: 0;
+          }
+        }
+      }
+
+      .question-body {
+        padding: 18px 24px;
+        max-height: 500px;
+        opacity: 1;
+        margin-bottom: 8px;
+        transition: max-height 1s ease-in-out;
+        p{
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

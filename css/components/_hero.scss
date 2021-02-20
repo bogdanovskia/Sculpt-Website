@@ -1,0 +1,149 @@
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+}
+
+#hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100vh;
+  // padding: 0 160px;
+
+  .content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 160px;
+    position: relative;
+
+    h1 {
+      font-size: 5.6rem;
+    }
+    h4 {
+      font-size: 1.8rem;
+      font-family: $title-font;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: $primary-color-dark;
+      letter-spacing: 0.2rem;
+    }
+    p {
+      font-size: 1.8rem;
+    }
+
+    .bottom {
+      position: absolute;
+      left: 0;
+      bottom: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding-left: 160px;
+    }
+
+    .socials{
+      list-style: none;
+      display: flex;
+
+      li{
+        margin: 0 8px;
+        font-size: 1.8rem;
+        color: $secondary-color-light;
+
+        a{
+          color: $secondary-color-light;
+          font-size: 1.8rem;
+          @include transition(.2s);
+
+          &:hover, &:focus{
+            color: $secondary-color;
+          }
+        }
+      }
+    }
+
+    .mouse {
+      height: 56px;
+      width: 34px;
+      border: 1px solid rgba($color: $primary-color, $alpha: 0.8);
+      border-radius: 100px;
+      padding: 15px 14px;
+      position: relative;
+
+      &:before{
+        content: '';
+        width: 1px;
+        height: 135px;
+        background-color: $secondary-color-light;
+        position: absolute;
+        left: -32px;
+        top: 42px;
+        opacity: .2;
+      }
+
+      .mouse-scroll {
+        width: 4px;
+        height: 16px;
+        background-color: $primary-color-dark;
+        border-radius: 100px;
+        animation-duration: 1.2s;
+        animation-iteration-count: infinite;
+        animation-name: scroll;
+      }
+    }
+  }
+
+  .mockup-container {
+    // background-color: #ededed;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 130px;
+    padding-bottom: 12px;
+
+    .circle-holder {
+      width: 100%;
+      padding-top: 100%;
+      border: 2px solid #fff;
+      position: relative;
+    }
+
+    .mockup-box {
+      // background-color: #222;
+      background-image: url("../img/circles.svg");
+      background-repeat: no-repeat;
+      background-size: auto 90%;
+      background-position: center;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      position: relative;
+
+      img {
+        height: 100%;
+
+        &:before {
+          content: "";
+          position: absolute;
+          background-color: $primary-color;
+          width: 150%;
+          height: 60%;
+        }
+      }
+    }
+  }
+}

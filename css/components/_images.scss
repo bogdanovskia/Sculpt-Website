@@ -1,0 +1,56 @@
+#home-about {
+  .img-cont {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+
+    .bg-circle {
+      width: 90%;
+      height: 90%;
+      background-color: $primary-color;
+      border-radius: 100%;
+      position: absolute;
+      top: 5%;
+      left: 0;
+    }
+
+    .polka-texture {
+      position: absolute;
+      z-index: 100;
+      left: -32px;
+      bottom: 10%;
+      max-width: 65%;
+    }
+
+    .about-img{
+      position: absolute;
+      width: 115%;
+      right: 0;
+      bottom: 5%;
+      z-index: 400;
+    }
+  }
+}
+
+#home-faq{
+  .img-cont{
+    width: 100%;
+    padding-top: 125%;
+    position: relative;
+
+    .polka{
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    .faq-img{
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 42px;
+    }
+  }
+}

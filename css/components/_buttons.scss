@@ -1,0 +1,36 @@
+.primary-btn{
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 32px;
+  padding: 14px 24px;
+  padding-top: 15px;
+  border-radius: 7px;
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: .1rem;
+  background-color: $primary-color-dark;
+  color: #fff;
+  @include transition(.3s);
+
+  i{
+    color: #fff;
+    margin-left: 18px;
+    font-size: 1.6rem;
+    @include transition(.5s);
+  }
+
+  &:hover, &:focus{
+    color: #fff;
+    text-decoration: none;
+    background-color: $primary-color;
+
+    i{
+      transform: translateX(4px);
+      -webkit-transform: translateX(4px);
+    }
+  }
+
+  &.navbar-btn{
+    margin: 0;
+  }
+}

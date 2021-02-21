@@ -274,6 +274,24 @@ section, .main-footer {
           justify-content: center;
   padding-left: 160px;
   position: relative;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+
+@media screen and (min-width: 992px) {
+  #hero .content {
+    transform: translateY(-60px);
+    -webkit-transform: translateY(-60px);
+    opacity: 0;
+  }
+}
+
+#hero .content.show {
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  opacity: 1;
 }
 
 #hero .content h1 {
@@ -387,7 +405,7 @@ section, .main-footer {
 #hero .mockup-container .mockup-box {
   background-image: url("../img/circles.svg");
   background-repeat: no-repeat;
-  background-size: auto 10%;
+  background-size: auto 90%;
   background-position: center;
   width: 100%;
   height: 100%;
@@ -407,10 +425,21 @@ section, .main-footer {
 
 #hero .mockup-container .mockup-box.enlarge {
   background-size: auto 90%;
+  opacity: 1;
 }
 
 #hero .mockup-container .mockup-box img {
   height: 100%;
+  transition-duration: 0.8s;
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+}
+
+#hero .mockup-container .mockup-box img.show {
+  opacity: 1;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
 }
 
 #hero .mockup-container .mockup-box img:before {
@@ -419,6 +448,18 @@ section, .main-footer {
   background-color: #FA97C1;
   width: 150%;
   height: 60%;
+}
+
+@media screen and (min-width: 992px) {
+  #hero .mockup-container .mockup-box {
+    background-size: auto 10%;
+    opacity: 0;
+  }
+  #hero .mockup-container .mockup-box img {
+    opacity: 0;
+    transform: translateY(60vh);
+    -webkit-transform: translateY(60vh);
+  }
 }
 
 #home-about .img-cont {
@@ -851,6 +892,111 @@ section, .main-footer {
 .posts-wrapper .featured-post-big:hover .img-box img, .posts-wrapper .featured-post-big:focus .img-box img {
   transform: scale(1.05);
   -webkit-transform: scale(1.05);
+}
+
+.blog-post-wrapper {
+  padding: 48px 0;
+}
+
+.blog-post-wrapper .banner-img-holder {
+  width: 100%;
+}
+
+.blog-post-wrapper .banner-img-holder img {
+  width: 100%;
+}
+
+.blog-post-wrapper .post-content {
+  padding: 40px 0;
+}
+
+.blog-post-wrapper .post-content h1,
+.blog-post-wrapper .post-content h2,
+.blog-post-wrapper .post-content h3,
+.blog-post-wrapper .post-content h4 {
+  margin-top: 40px;
+  margin-bottom: 24px;
+  font-weight: 700;
+  color: #222222;
+  letter-spacing: -0.1rem;
+}
+
+.blog-post-wrapper .post-content img {
+  width: 100%;
+  margin: 32px 0;
+}
+
+.blog-post-wrapper .post-header {
+  margin-bottom: 42px;
+}
+
+.blog-post-wrapper .post-header .title {
+  margin: 32px 0;
+}
+
+.blog-post-wrapper .post-header .date {
+  color: rgba(65, 65, 65, 0.8);
+  opacity: 0.7;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 24px;
+  color: rgba(65, 65, 65, 0.9);
+}
+
+.blog-post-wrapper .post-header .blogpost-badge {
+  color: #fff;
+  background-color: #DE4083;
+  font-weight: 600;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  vertical-align: middle;
+  line-height: 3.2rem;
+  height: 28px;
+  padding: 0 10px;
+  padding-bottom: 1px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.blog-post-wrapper .post-header .author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #111;
+  margin-top: 24px;
+}
+
+.blog-post-wrapper .post-header .author .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin-right: 12px;
+}
+
+.blog-post-wrapper .post-header .author .avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  -o-object-fit: cover;
+  -o-object-position: center;
+}
+
+.blog-post-wrapper .post-header .author h5 {
+  color: #282828;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 0;
+  margin-top: 2px;
 }
 
 .navigation {

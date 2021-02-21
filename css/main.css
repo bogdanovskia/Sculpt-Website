@@ -346,14 +346,14 @@ section, .main-footer {
 }
 
 #hero .content .mouse:before {
-  content: '';
+  content: "";
   width: 1px;
   height: 135px;
   background-color: #414141;
   position: absolute;
   left: -32px;
   top: 42px;
-  opacity: .2;
+  opacity: 0.2;
 }
 
 #hero .content .mouse .mouse-scroll {
@@ -387,7 +387,7 @@ section, .main-footer {
 #hero .mockup-container .mockup-box {
   background-image: url("../img/circles.svg");
   background-repeat: no-repeat;
-  background-size: auto 90%;
+  background-size: auto 10%;
   background-position: center;
   width: 100%;
   height: 100%;
@@ -398,6 +398,15 @@ section, .main-footer {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+  transition: background-size 1s ease-in;
+  -moz-transition: background-size 1s ease-in;
+  -ms-transition: background-size 1s ease-in;
+  -o-transition: background-size 1s ease-in;
+  -webkit-transition: background-size 1s ease-in;
+}
+
+#hero .mockup-container .mockup-box.enlarge {
+  background-size: auto 90%;
 }
 
 #hero .mockup-container .mockup-box img {

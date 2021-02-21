@@ -54,21 +54,22 @@
       padding-left: 160px;
     }
 
-    .socials{
+    .socials {
       list-style: none;
       display: flex;
 
-      li{
+      li {
         margin: 0 8px;
         font-size: 1.8rem;
         color: $secondary-color-light;
 
-        a{
+        a {
           color: $secondary-color-light;
           font-size: 1.8rem;
-          @include transition(.2s);
+          @include transition(0.2s);
 
-          &:hover, &:focus{
+          &:hover,
+          &:focus {
             color: $secondary-color;
           }
         }
@@ -83,15 +84,15 @@
       padding: 15px 14px;
       position: relative;
 
-      &:before{
-        content: '';
+      &:before {
+        content: "";
         width: 1px;
         height: 135px;
         background-color: $secondary-color-light;
         position: absolute;
         left: -32px;
         top: 42px;
-        opacity: .2;
+        opacity: 0.2;
       }
 
       .mouse-scroll {
@@ -125,13 +126,22 @@
       // background-color: #222;
       background-image: url("../img/circles.svg");
       background-repeat: no-repeat;
-      background-size: auto 90%;
+      background-size: auto 10%;
       background-position: center;
       width: 100%;
       height: 100%;
       display: flex;
       justify-content: center;
       position: relative;
+      transition: background-size 1s ease-in;
+      -moz-transition: background-size 1s ease-in;
+      -ms-transition: background-size 1s ease-in;
+      -o-transition: background-size 1s ease-in;
+      -webkit-transition: background-size 1s ease-in;
+
+      &.enlarge{
+        background-size: auto 90%;
+      }
 
       img {
         height: 100%;

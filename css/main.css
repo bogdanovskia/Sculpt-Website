@@ -178,6 +178,10 @@ section, .main-footer {
   padding: 50px 0;
 }
 
+.pb-100 {
+  padding-bottom: 100px;
+}
+
 .primary-btn {
   text-decoration: none;
   display: inline-block;
@@ -187,7 +191,7 @@ section, .main-footer {
   border-radius: 7px;
   font-weight: 600;
   font-size: 2rem;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   background-color: #DE4083;
   color: #fff;
   transition-duration: 0.3s;
@@ -219,6 +223,15 @@ section, .main-footer {
 
 .primary-btn.navbar-btn {
   margin: 0;
+  padding: 0 24px;
+  height: 56px;
+  line-height: 56px;
+}
+
+@media screen and (max-width: 1400px) {
+  .primary-btn.navbar-btn {
+    font-size: 1.6rem;
+  }
 }
 
 @-webkit-keyframes scroll {
@@ -910,6 +923,31 @@ section, .main-footer {
   padding: 40px 0;
 }
 
+.blog-post-wrapper .post-content b {
+  color: #222222;
+}
+
+.blog-post-wrapper .post-content a {
+  color: #DE4083;
+}
+
+.blog-post-wrapper .post-content .quote, .blog-post-wrapper .post-content blockquote {
+  background-color: rgba(250, 151, 193, 0.1);
+  padding: 32px;
+  margin: 32px 0;
+  position: relative;
+}
+
+.blog-post-wrapper .post-content .quote:after, .blog-post-wrapper .post-content blockquote:after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background-color: #DE4083;
+  height: 100%;
+  left: -4px;
+  top: 0;
+}
+
 .blog-post-wrapper .post-content h1,
 .blog-post-wrapper .post-content h2,
 .blog-post-wrapper .post-content h3,
@@ -1120,6 +1158,12 @@ section, .main-footer {
 .navigation .nav-links li a:hover, .navigation .nav-links li a:focus {
   color: #DE4083;
   text-decoration: none;
+}
+
+@media screen and (max-width: 1400px) {
+  .navigation .nav-links li a {
+    font-size: 1.6rem;
+  }
 }
 
 .navigation .hamburger {

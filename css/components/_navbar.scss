@@ -9,7 +9,7 @@
   z-index: 999;
   border-bottom: 1px solid #ededed;
 
-  &.static{
+  &.static {
     position: static;
   }
 
@@ -89,9 +89,14 @@
         font-weight: 600;
         @include transition(0.2s);
 
-        &:hover, &:focus{
+        &:hover,
+        &:focus {
           color: $primary-color-dark;
           text-decoration: none;
+        }
+
+        @media screen and (max-width: 1400px) {
+          font-size: 1.6rem;
         }
       }
     }

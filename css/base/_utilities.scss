@@ -58,3 +58,27 @@ section, .main-footer{
 .pb-100{
     padding-bottom: 100px;
 }
+
+.breadcrumbs{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    
+    li{
+        &::before{
+            content: '>';
+            margin-left: 8px;
+            margin-right: 6px;
+            opacity: .7;
+        }
+
+        a{
+            color: $primary-color-dark;
+        }
+
+        &:first-of-type::before{
+            content: '';
+            margin: 0;
+        }
+    }
+}

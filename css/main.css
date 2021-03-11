@@ -1474,11 +1474,11 @@ section, .main-footer {
   -webkit-transform: scale(0.8);
 }
 
-#support-header, #topic-header, #question-header {
+#support-header, #topic-header, #question-header, #faq-header {
   background-color: #F5F5FA;
 }
 
-#support-header .content, #topic-header .content, #question-header .content {
+#support-header .content, #topic-header .content, #question-header .content, #faq-header .content {
   width: 100%;
   max-width: 700px;
   margin: 0 auto;
@@ -1498,19 +1498,19 @@ section, .main-footer {
   text-align: center;
 }
 
-#support-header .content .buttons .primary-btn, #topic-header .content .buttons .primary-btn, #question-header .content .buttons .primary-btn, #support-header .content .buttons .ghost-btn, #topic-header .content .buttons .ghost-btn, #question-header .content .buttons .ghost-btn {
+#support-header .content .buttons .primary-btn, #topic-header .content .buttons .primary-btn, #question-header .content .buttons .primary-btn, #faq-header .content .buttons .primary-btn, #support-header .content .buttons .ghost-btn, #topic-header .content .buttons .ghost-btn, #question-header .content .buttons .ghost-btn, #faq-header .content .buttons .ghost-btn {
   margin-right: 12px;
 }
 
-#support-header .content .buttons .ghost-btn, #topic-header .content .buttons .ghost-btn, #question-header .content .buttons .ghost-btn {
+#support-header .content .buttons .ghost-btn, #topic-header .content .buttons .ghost-btn, #question-header .content .buttons .ghost-btn, #faq-header .content .buttons .ghost-btn {
   margin-right: 0;
 }
 
-#support-header .content h1, #topic-header .content h1, #question-header .content h1 {
+#support-header .content h1, #topic-header .content h1, #question-header .content h1, #faq-header .content h1 {
   margin-bottom: 0;
 }
 
-#support-header .img-cont img, #topic-header .img-cont img, #question-header .img-cont img {
+#support-header .img-cont img, #topic-header .img-cont img, #question-header .img-cont img, #faq-header .img-cont img {
   width: 90%;
   max-width: 500px;
   margin-bottom: 32px;

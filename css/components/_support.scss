@@ -153,6 +153,10 @@
   @extend #topic-header;
 }
 
+#faq-header{
+  @extend #support-header;
+}
+
 .topic-post-wrapper {
   padding: 48px 0;
 

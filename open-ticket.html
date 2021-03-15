@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Sculpt</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/flickity.css">
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+
+  <nav class="navigation static">
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <div class="nav-container">
+      <div class="navigation-left">
+        <a href="index.html" id="logo">
+          <img src="img/logo.png" alt="Magnet Fishing Logo">
+        </a>
+        <div class="lang-select">
+          <i class="fa fa-angle-down"></i>
+          <div class="selected">
+            <img src="img/eng-flag.png" alt="">
+          </div>
+          <a href="#">
+            <img src="img/spn-flag.png" alt="English">
+          </a>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="#">How it works</a>
+          </li>
+          <li>
+            <a href="#">Find your program</a>
+          </li>
+          <li>
+            <a href="#">Lifestyle</a>
+          </li>
+          <li>
+            <a href="#">FAQ</a>
+          </li>
+          <li>
+            <a href="#">Support</a>
+          </li>
+        </ul>
+      </div>
+      <a href="#" class="primary-btn navbar-btn">Get Started</a>
+    </div>
+  </nav>
+
+  <div id="open-ticket">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10">
+          <h3>Open new customer support ticket</h3>
+          <p>Please let us know your what problem you have and we will try to answer as soon as possible.</p>
+          <hr>
+          <form id="ticket-form">
+            <div class="input-group">
+              <label for="ticket-subject">Ticket Subject</label>
+              <input type="text" id="ticket-subject" placeholder="Enter ticket subject..." required>
+            </div>
+            <div class="input-group">
+              <label for="user-email">Your Email Address</label>
+              <input type="email" id="user-email" placeholder="Enter your email address..." required>
+            </div>
+            <div class="input-group">
+              <label for="message">Problem Description</label>
+              <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message..." required></textarea>
+            </div>
+            <button type="submit" class="primary-btn">Submit</button>
+            <a href="#" class="ghost-btn">Cancel</a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="main-footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <h4>Sculpt App</h4>
+          <ul class="footer-links">
+            <li>
+              <a href="#">Get Started</a>
+            </li>
+            <li>
+              <a href="#">How It Works</a>
+            </li>
+            <li>
+              <a href="#">Find Your Program</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h4>Support</h4>
+          <ul class="footer-links">
+            <li>
+              <a href="#">Help Center</a>
+            </li>
+            <li>
+              <a href="#">Frequently Asked Questions</a>
+            </li>
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#">Terms and Conditions</a>
+            </li>
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12">
+
+          <h4>Download The App</h4>
+          <a href="#" target="_blank">
+            <img src="img/ios-download.png" alt="">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4>
+            Join The Squad
+          </h4>
+          <ul class="footer-socials">
+            <li>
+              <a href="#" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row footer-bottom">
+        <div class="col">
+          <p>
+            &copy; Copyright 2021 Magnet Fishing. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <!-- <script src="js/main.js"></script> -->
+</body>
+
+</html>

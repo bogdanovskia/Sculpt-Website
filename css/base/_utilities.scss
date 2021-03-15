@@ -82,3 +82,32 @@ section, .main-footer{
         }
     }
 }
+
+.custom-badge{
+    display: inline-block;
+    background-color: $primary-color-dark;
+    color: #fff;
+    padding: 2px 10px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.4rem;
+
+    &.custom-badge-success{
+        background-color: rgb(49, 160, 49);
+    }
+    &.custom-badge-warning{
+        background-color: #ffd747;
+        color: rgba($color: $secondary-color, $alpha: .7);
+    }
+    &.custom-badge-light{
+        background-color: $light-bg;
+        color: rgba($color: $secondary-color, $alpha: .7);
+    }
+    &.custom-badge-secondary{
+        background-color: #ededed;
+        color: rgba($color: $secondary-color, $alpha: .7);
+    }
+}

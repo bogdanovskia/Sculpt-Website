@@ -10,6 +10,7 @@
   letter-spacing: 0.1rem;
   background-color: $primary-color-dark;
   color: #fff;
+  border: 0;
   @include transition(0.3s);
 
   i {

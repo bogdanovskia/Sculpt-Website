@@ -208,6 +208,41 @@ section, .main-footer {
   margin: 0;
 }
 
+.custom-badge {
+  display: inline-block;
+  background-color: #DE4083;
+  color: #fff;
+  padding: 2px 10px;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.custom-badge.custom-badge-success {
+  background-color: #31a031;
+}
+
+.custom-badge.custom-badge-warning {
+  background-color: #ffd747;
+  color: rgba(40, 40, 40, 0.7);
+}
+
+.custom-badge.custom-badge-light {
+  background-color: #F5F5FA;
+  color: rgba(40, 40, 40, 0.7);
+}
+
+.custom-badge.custom-badge-secondary {
+  background-color: #ededed;
+  color: rgba(40, 40, 40, 0.7);
+}
+
 .primary-btn, .ghost-btn {
   text-decoration: none;
   display: inline-block;
@@ -220,6 +255,7 @@ section, .main-footer {
   letter-spacing: 0.1rem;
   background-color: #DE4083;
   color: #fff;
+  border: 0;
   transition-duration: 0.3s;
   -webkit-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
@@ -1825,6 +1861,147 @@ section, .main-footer {
   max-width: 80%;
   display: block;
   margin: 0 auto;
+}
+
+.dash-grid {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 7fr;
+      grid-template-columns: 3fr 7fr;
+  -ms-grid-rows: 100vh;
+      grid-template-rows: 100vh;
+}
+
+.dash-grid .main-area {
+  padding: 40px;
+}
+
+.dash-grid .main-area .ticket-info .ticket-title {
+  margin-top: 24px;
+}
+
+.dash-grid .main-area .reply-area textarea {
+  width: 100%;
+  font-size: 1.6rem;
+}
+
+.dash-grid .sidebar {
+  border-right: 1px solid #ededed;
+}
+
+.dash-grid .sidebar header {
+  padding: 24px;
+  background-color: #F5F5FA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 90px;
+}
+
+.dash-grid .sidebar header h3 {
+  margin: 0;
+}
+
+.dash-grid .ticket-cards-container {
+  height: calc(100vh - 90px);
+  overflow: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.dash-grid .ticket-cards-container::-webkit-scrollbar {
+  display: none;
+}
+
+.dash-grid .ticket-card {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 24px;
+  border-bottom: 1px solid #ededed;
+  cursor: pointer;
+}
+
+.dash-grid .ticket-card .left-side {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+
+.dash-grid .ticket-card .left-side .ticket-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  /* number of lines to show */
+  -webkit-box-orient: vertical;
+  font-weight: 600;
+}
+
+.dash-grid .ticket-card .left-side .date {
+  opacity: 0.7;
+}
+
+.dash-grid .ticket-card.closed .ticket-title {
+  opacity: .7;
+}
+
+#open-ticket {
+  padding: 80px 0;
+}
+
+#open-ticket #ticket-form {
+  width: 100%;
+}
+
+#open-ticket #ticket-form button {
+  margin-top: 0;
+}
+
+#open-ticket #ticket-form .ghost-btn {
+  margin-left: 12px;
+}
+
+#open-ticket #ticket-form .input-group {
+  width: 100%;
+  margin: 24px 0;
+}
+
+#open-ticket #ticket-form .input-group input, #open-ticket #ticket-form .input-group textarea {
+  display: block;
+  width: 100%;
+  height: 42px;
+  padding-left: 12px;
+  outline: none;
+  border-radius: 4px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #dadada;
+}
+
+#open-ticket #ticket-form .input-group input:focus, #open-ticket #ticket-form .input-group textarea:focus {
+  border: 1px solid #FA97C1;
+}
+
+#open-ticket #ticket-form .input-group textarea {
+  height: 120px;
+  resize: none;
+  padding-top: 16px;
 }
 
 #home-features {

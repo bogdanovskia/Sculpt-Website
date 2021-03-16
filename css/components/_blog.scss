@@ -118,6 +118,10 @@
       top: 16px;
       left: 16px;
       z-index: 500;
+
+      a{
+        color: #fff!important;
+      }
     }
   }
 
@@ -338,6 +342,9 @@
         display: inline-block;
         flex-grow: 0;
         flex-shrink: 0;
+        a{
+          color: #fff!important;
+        }
       }
 
       p {
@@ -460,6 +467,9 @@
       padding-bottom: 1px;
       text-transform: uppercase;
       display: inline-block;
+      a{
+        color: #fff!important;
+      }
     }
     .author {
       display: flex;

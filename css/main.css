@@ -767,6 +767,10 @@ section, .main-footer {
   z-index: 500;
 }
 
+.blogpost-card .img-box .blogpost-badge a {
+  color: #fff !important;
+}
+
 .blogpost-card:hover, .blogpost-card:focus {
   cursor: pointer;
 }
@@ -1016,6 +1020,10 @@ section, .main-footer {
       flex-shrink: 0;
 }
 
+.posts-wrapper .featured-post-big .content .blogpost-badge a {
+  color: #fff !important;
+}
+
 .posts-wrapper .featured-post-big .content p {
   margin: 0;
   font-size: 1.6rem;
@@ -1136,6 +1144,10 @@ section, .main-footer {
   padding-bottom: 1px;
   text-transform: uppercase;
   display: inline-block;
+}
+
+.blog-post-wrapper .post-header .blogpost-badge a {
+  color: #fff !important;
 }
 
 .blog-post-wrapper .post-header .author {

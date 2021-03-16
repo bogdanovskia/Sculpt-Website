@@ -2150,6 +2150,11 @@ footer h4 {
   margin-bottom: 32px;
 }
 
+footer .iosdownload img, footer .androiddownload img {
+  width: 192px;
+  margin-bottom: 16px;
+}
+
 footer .footer-socials {
   list-style: none;
   display: -webkit-box;

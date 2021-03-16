@@ -143,6 +143,14 @@ footer {
     margin-bottom: 32px;
   }
 
+  .iosdownload, .androiddownload{
+    
+    img{
+      width: 192px;
+      margin-bottom: 16px;
+    }
+  }
+
   .footer-socials {
     list-style: none;
     display: flex;

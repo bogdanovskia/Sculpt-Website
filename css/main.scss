@@ -80,7 +80,7 @@
     border-radius: 8px;
     overflow: hidden;
 
-    input {
+    input.email {
       position: absolute;
       left: 0;
       right: 0;
@@ -94,7 +94,7 @@
       padding-left: 32px;
     }
 
-    .submit-btn {
+    #mc-embedded-subscribe {
       position: absolute;
       right: 8px;
       top: 8px;

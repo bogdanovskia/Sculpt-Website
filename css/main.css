@@ -526,7 +526,7 @@ section, .main-footer {
 }
 
 #hero .mockup-container .mockup-box.enlarge {
-  background-size: auto 90%;
+  background-size: 80% auto;
   opacity: 1;
 }
 
@@ -554,7 +554,7 @@ section, .main-footer {
 
 @media screen and (min-width: 992px) {
   #hero .mockup-container .mockup-box {
-    background-size: auto 10%;
+    background-size: 10% auto;
     opacity: 0;
   }
   #hero .mockup-container .mockup-box img {
@@ -1552,10 +1552,6 @@ section, .main-footer {
   margin-bottom: 32px;
 }
 
-#topics-wrapper {
-  padding-bottom: 16px;
-}
-
 #topics-wrapper .topics-grid {
   display: -ms-grid;
   display: grid;
@@ -1647,10 +1643,6 @@ section, .main-footer {
   font-size: 3.6rem;
   color: #DE4083;
   margin-bottom: 16px;
-}
-
-#questions-wrapper {
-  padding-bottom: 16px;
 }
 
 #questions-wrapper .ticket-section {
@@ -2082,7 +2074,7 @@ section, .main-footer {
   overflow: hidden;
 }
 
-#subscribe-box .input-cont input {
+#subscribe-box .input-cont input.email {
   position: absolute;
   left: 0;
   right: 0;
@@ -2097,7 +2089,7 @@ section, .main-footer {
   padding-left: 32px;
 }
 
-#subscribe-box .input-cont .submit-btn {
+#subscribe-box .input-cont #mc-embedded-subscribe {
   position: absolute;
   right: 8px;
   top: 8px;
@@ -2114,7 +2106,7 @@ section, .main-footer {
   outline: none !important;
 }
 
-#subscribe-box .input-cont .submit-btn:hover, #subscribe-box .input-cont .submit-btn:focus {
+#subscribe-box .input-cont #mc-embedded-subscribe:hover, #subscribe-box .input-cont #mc-embedded-subscribe:focus {
   background-color: #DE4083;
 }
 

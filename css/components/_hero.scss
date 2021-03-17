@@ -19,6 +19,14 @@
   grid-template-rows: 100vh;
   // padding: 0 160px;
 
+  a{
+    img{
+      margin-right: 8px;
+      margin-bottom: 8px;
+      max-width: 192px;
+    }
+  }
+
   .content {
     position: relative;
     display: flex;

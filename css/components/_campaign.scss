@@ -1,0 +1,188 @@
+.demo-video-wrapper {
+	background-image: url(https://d3k5xyayaartr5.cloudfront.net/_assets/home-video/beach-waves-loop.jpg);
+}
+
+/* Video overlay and content */
+.video-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	pointer-events: none; /* Allows right click menu on the video */
+	background-color: rgba($color: #000000, $alpha: .15);
+}
+.video-hero--content {
+	position: relative;
+	text-align: center;
+	color: #FFF!important;
+  margin: 200px 0;
+	text-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+.video-hero--content h2 {
+	font-size: 34px;
+	margin: 0 0 10px;
+  color: #FFF!important;
+}
+.video-hero--content p {
+	font-size: 20px;
+	margin: 0;
+  color: rgba($color: #fff, $alpha: .8);
+}
+
+
+/* CSS from jQuery Background Video plugin */
+/**
+ * Set default positioning as a fallback for if the plugin fails
+ */
+.jquery-background-video-wrapper {
+	position: relative;
+	overflow: hidden;
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+	    	background-size: cover;
+}
+.jquery-background-video {
+	position: absolute;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	top: 50%;
+	left: 50%;
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-webkit-transform: translate(-50%,-50%);
+	   -moz-transform: translate(-50%,-50%);
+	    -ms-transform: translate(-50%,-50%);
+	     -o-transform: translate(-50%,-50%);
+	    	transform: translate(-50%,-50%);
+}
+/**
+ * Fade in videos
+ * Note the .js class - so non js users still
+ * see the video
+ */
+.js .jquery-background-video {
+	opacity: 0;
+	-webkit-transition: opacity 300ms linear;
+			transition: opacity 300ms linear;
+}
+.js .jquery-background-video.is-visible {
+	opacity: 1;
+}
+
+/**
+ * Pause/play button
+ */ 
+.jquery-background-video-pauseplay {
+	position: absolute;
+	background: transparent;
+	border: none;
+	box-shadow: none;
+	width: 20px;
+	height: 20px;
+	top: 15px;
+	right: 15px;
+	padding: 0;
+	cursor: pointer;
+	outline: none !important;
+}
+.jquery-background-video-pauseplay span {
+	display: none;
+}
+.jquery-background-video-pauseplay:after,
+.jquery-background-video-pauseplay:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	-webkit-transition: all .3s ease;
+			transition: all .3s ease;
+}
+.jquery-background-video-pauseplay.play:before {
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 15px solid #FFF;
+}
+.jquery-background-video-pauseplay.pause:before,
+.jquery-background-video-pauseplay.pause:after {
+	border-top: 10px solid #FFF;
+	border-bottom: 10px solid #FFF;
+	border-left: 5px solid #FFF;
+}
+.jquery-background-video-pauseplay.pause:after {
+	left: 10px;
+}
+
+.app-download{
+  background-color: $light-bg;
+  .campaign-img{
+    margin: 24px 0;
+  }
+}
+
+.logos{
+  width: 100%;
+  img{
+    width: 100%;
+  }
+}
+
+.campaign-section{
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  .title{
+    h1{
+      font-size: 2.8rem;
+    }
+  }
+
+  .img-cont{
+    width: 100%;
+
+    img{
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+
+.discountcodesection{
+  padding: 40px;
+  padding-top: 0;
+  text-align: center;
+  opacity: 0;
+  max-height: 0;
+  transform: translateY(100px);
+  -webkit-transform: translateY(100px);
+  @include transition(.4s);
+
+  .code-box{
+    display: inline-block;
+    margin: 0 auto;
+    border: 1px dashed #999;
+    padding: 48px;
+
+    p{
+      color: $primary-color-dark;
+      margin: 0;
+      margin-bottom: 24px;
+    }
+
+    h1{
+      font-size: 5rem;
+    }
+  }
+
+  &.display{
+    opacity: 1;
+    max-height: 1000px;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+  }
+}

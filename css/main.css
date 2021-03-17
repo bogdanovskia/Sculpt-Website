@@ -48,7 +48,7 @@
 
 .title h1 span {
   color: #FA97C1;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 6rem;
   margin-left: 6px;
 }
@@ -75,6 +75,7 @@ h1,
 h2,
 h3 {
   font-family: "Montserrat", sans-serif;
+  color: #282828;
 }
 
 h1 {
@@ -97,14 +98,17 @@ h3 {
 
 h4 {
   font-size: 1.8rem;
+  color: #282828;
 }
 
 h5 {
   font-size: 1.4rem;
+  color: #282828;
 }
 
 h6 {
   font-size: 1.2rem;
+  color: #282828;
 }
 
 p {
@@ -298,6 +302,11 @@ section, .main-footer {
   padding: 0 24px;
   height: 56px;
   line-height: 56px;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 @media screen and (max-width: 1400px) {
@@ -357,6 +366,12 @@ section, .main-footer {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 100vh;
       grid-template-rows: 100vh;
+}
+
+#hero a img {
+  margin-right: 8px;
+  margin-bottom: 8px;
+  max-width: 192px;
 }
 
 #hero .content {
@@ -1235,14 +1250,15 @@ section, .main-footer {
   display: flex;
 }
 
-.navigation .navigation-left #logo {
+.navigation .navigation-left .custom-logo-link {
   width: 110px;
   display: inline-block;
   margin-right: 24px;
 }
 
-.navigation .navigation-left #logo img {
+.navigation .navigation-left .custom-logo-link img {
   width: 100%;
+  height: auto !important;
 }
 
 .navigation .navigation-left .lang-select {
@@ -2008,6 +2024,205 @@ section, .main-footer {
   padding-top: 16px;
 }
 
+.demo-video-wrapper {
+  background-image: url(https://d3k5xyayaartr5.cloudfront.net/_assets/home-video/beach-waves-loop.jpg);
+}
+
+/* Video overlay and content */
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+  /* Allows right click menu on the video */
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.video-hero--content {
+  position: relative;
+  text-align: center;
+  color: #FFF !important;
+  margin: 200px 0;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.video-hero--content h2 {
+  font-size: 34px;
+  margin: 0 0 10px;
+  color: #FFF !important;
+}
+
+.video-hero--content p {
+  font-size: 20px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* CSS from jQuery Background Video plugin */
+/**
+ * Set default positioning as a fallback for if the plugin fails
+ */
+.jquery-background-video-wrapper {
+  position: relative;
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jquery-background-video {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/**
+ * Fade in videos
+ * Note the .js class - so non js users still
+ * see the video
+ */
+.js .jquery-background-video {
+  opacity: 0;
+  -webkit-transition: opacity 300ms linear;
+  transition: opacity 300ms linear;
+}
+
+.js .jquery-background-video.is-visible {
+  opacity: 1;
+}
+
+/**
+ * Pause/play button
+ */
+.jquery-background-video-pauseplay {
+  position: absolute;
+  background: transparent;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 20px;
+  height: 20px;
+  top: 15px;
+  right: 15px;
+  padding: 0;
+  cursor: pointer;
+  outline: none !important;
+}
+
+.jquery-background-video-pauseplay span {
+  display: none;
+}
+
+.jquery-background-video-pauseplay:after,
+.jquery-background-video-pauseplay:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.jquery-background-video-pauseplay.play:before {
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #FFF;
+}
+
+.jquery-background-video-pauseplay.pause:before,
+.jquery-background-video-pauseplay.pause:after {
+  border-top: 10px solid #FFF;
+  border-bottom: 10px solid #FFF;
+  border-left: 5px solid #FFF;
+}
+
+.jquery-background-video-pauseplay.pause:after {
+  left: 10px;
+}
+
+.app-download {
+  background-color: #F5F5FA;
+}
+
+.app-download .campaign-img {
+  margin: 24px 0;
+}
+
+.logos {
+  width: 100%;
+}
+
+.logos img {
+  width: 100%;
+}
+
+.campaign-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.campaign-section .title h1 {
+  font-size: 2.8rem;
+}
+
+.campaign-section .img-cont {
+  width: 100%;
+}
+
+.campaign-section .img-cont img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.discountcodesection {
+  padding: 40px;
+  padding-top: 0;
+  text-align: center;
+  opacity: 0;
+  max-height: 0;
+  transform: translateY(100px);
+  -webkit-transform: translateY(100px);
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+}
+
+.discountcodesection .code-box {
+  display: inline-block;
+  margin: 0 auto;
+  border: 1px dashed #999;
+  padding: 48px;
+}
+
+.discountcodesection .code-box p {
+  color: #DE4083;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.discountcodesection .code-box h1 {
+  font-size: 5rem;
+}
+
+.discountcodesection.display {
+  opacity: 1;
+  max-height: 1000px;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+}
+
 #home-features {
   margin: 24px 0;
 }
@@ -2150,7 +2365,8 @@ footer h4 {
   margin-bottom: 32px;
 }
 
-footer .iosdownload img, footer .androiddownload img {
+footer .iosdownload img,
+footer .androiddownload img {
   width: 192px;
   margin-bottom: 16px;
 }
@@ -2271,5 +2487,93 @@ footer ul li a:hover, footer ul li a:focus {
 
 .pagination__btn.active:hover {
   color: #DE4083;
+}
+
+.download-buttons .iosdownload img,
+.download-buttons .androiddownload img {
+  height: 64px;
+}
+
+.download-buttons .iosdownload {
+  margin-right: 12px;
+}
+
+#testimonials {
+  position: relative;
+}
+
+#testimonials .slick-prev, #testimonials .slick-next {
+  width: 50px;
+  height: 50px;
+  background-color: #F5F5FA;
+  color: #282828;
+  border-radius: 100px;
+  position: absolute;
+  left: 40px;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 800;
+  transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+}
+
+#testimonials .slick-prev i, #testimonials .slick-next i {
+  line-height: 50px;
+}
+
+#testimonials .slick-prev:hover, #testimonials .slick-next:hover, #testimonials .slick-prev:focus, #testimonials .slick-next:focus {
+  background-color: rgba(250, 151, 193, 0.7);
+  color: #fff;
+}
+
+#testimonials .slick-next {
+  left: auto;
+  right: 40px;
+}
+
+#testimonials .testimonial-box {
+  text-align: center;
+  padding: 28px;
+  outline: none !important;
+}
+
+#testimonials .testimonial-box .testimonial-text {
+  font-size: 2.4rem;
+  margin-bottom: 3.2rem;
+}
+
+#testimonials .testimonial-box .user-details {
+  margin-top: 24px;
+}
+
+#testimonials .testimonial-box .user-details .name {
+  font-weight: 600;
+}
+
+#testimonials .testimonial-box .user-details .location {
+  opacity: 0.7;
+}
+
+#testimonials .testimonial-box .avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto;
+}
+
+#testimonials .testimonial-box .avatar img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 /*# sourceMappingURL=main.css.map */

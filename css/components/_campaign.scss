@@ -132,9 +132,29 @@
 
 .logos{
   width: 100%;
-  img{
-    width: 100%;
-  }
+	padding: 40px;
+	.heading-text{
+		color: $text-color;
+		text-transform: uppercase;
+	}
+  .logos-container{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		img, .featured-logo{
+			max-width: 12%;
+			filter: grayscale(100%);
+			-webkit-filter: grayscale(100%);
+			opacity: .6;
+			margin: 24px 0;
+			@include transition(.3s);
+
+			&:hover, &:focus{
+				opacity: 1;
+			}
+		}
+	}
 }
 
 .campaign-section{

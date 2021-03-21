@@ -2166,10 +2166,40 @@ section, .main-footer {
 
 .logos {
   width: 100%;
+  padding: 40px;
 }
 
-.logos img {
-  width: 100%;
+.logos .heading-text {
+  color: rgba(65, 65, 65, 0.8);
+  text-transform: uppercase;
+}
+
+.logos .logos-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logos .logos-container img, .logos .logos-container .featured-logo {
+  max-width: 12%;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  opacity: .6;
+  margin: 24px 0;
+  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+}
+
+.logos .logos-container img:hover, .logos .logos-container img:focus, .logos .logos-container .featured-logo:hover, .logos .logos-container .featured-logo:focus {
+  opacity: 1;
 }
 
 .campaign-section {

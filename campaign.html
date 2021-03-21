@@ -13,7 +13,7 @@
     crossorigin="anonymous" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" href="css/main.css" />
 </head>
 
@@ -66,7 +66,7 @@
 
   <div class="video-hero jquery-background-video-wrapper demo-video-wrapper">
     <video class="jquery-background-video" autoplay muted loop
-      poster="https://d2ezlykacdqcnj.cloudfront.net/_assets/home-video/beach-waves-loop.jpg">
+      poster="">
       <source src="https://d2ezlykacdqcnj.cloudfront.net/_assets/home-video/beach-waves-loop.mp4" type="video/mp4">
     </video>
     <div class="video-overlay"></div>
@@ -200,6 +200,8 @@
       </div>
     </div>
   </section>
+
+  <div class="klaviyo-form-RSWgd9"></div>
 
   <hr>
 
@@ -361,7 +363,10 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
   <script src="https://rawgit.com/BGStock/jquery-background-video/master/jquery.background-video.js"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" async
+    src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=Yhyv4T"></script>
+
 
   <script>
 
@@ -369,19 +374,6 @@
       $('.jquery-background-video').bgVideo({
         fadeIn: 2000,
         showPausePlay: false
-      });
-
-      function validateEmail($email) {
-        var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-        return emailReg.test($email);
-      }
-
-      
-      $('#mc-embedded-subscribe').click(function () {
-        var inputText = $('#mce-EMAIL').val();
-        if (validateEmail(inputText) && inputText !== "") {
-          $('.discountcodesection').addClass('display');
-        }
       });
 
       $('.testimonials-carousel').slick({

@@ -143,11 +143,11 @@
 		justify-content: space-between;
 
 		img, .featured-logo{
-			max-width: 12%;
+			max-width: 8%;
 			filter: grayscale(100%);
 			-webkit-filter: grayscale(100%);
 			opacity: .6;
-			margin: 24px 0;
+			margin: 24px;
 			@include transition(.3s);
 
 			&:hover, &:focus{

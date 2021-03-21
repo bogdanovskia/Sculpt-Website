@@ -7,6 +7,13 @@
 
 @font-face {
   font-family: "TT Commons";
+  src: url("../fonts/TTCommons-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Commons";
   src: url("../fonts/TTCommons-DemiBold.ttf");
   font-weight: 600;
   font-style: medium;
@@ -1312,14 +1319,15 @@ section, .main-footer {
 }
 
 .navigation .nav-links li {
-  margin: 0 16px;
+  margin: 0 12px;
 }
 
 .navigation .nav-links li a {
   color: #282828;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   font-size: 1.4rem;
+  letter-spacing: .07rem;
   transition-duration: 0.2s;
   -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
@@ -2154,9 +2162,14 @@ section, .main-footer {
   background-color: #F5F5FA;
 }
 
+.app-download p {
+  margin-bottom: 0;
+}
+
 .app-download .campaign-img {
   margin: 24px auto;
-  max-width: 300px;
+  margin-top: 8px;
+  max-width: 200px;
   display: block;
 }
 
@@ -2209,6 +2222,7 @@ section, .main-footer {
 
 .campaign-section .title h1 {
   font-size: 4.2rem;
+  line-height: 4.8rem;
 }
 
 .campaign-section .img-cont {

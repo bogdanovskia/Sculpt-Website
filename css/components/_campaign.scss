@@ -119,9 +119,13 @@
 
 .app-download{
   background-color: $light-bg;
+	p{
+		margin-bottom: 0;
+	}
   .campaign-img{
     margin: 24px auto;
-		max-width: 300px;
+		margin-top: 8px;
+		max-width: 200px;
 		display: block;
   }
 
@@ -164,6 +168,7 @@
   .title{
     h1{
       font-size: 4.2rem;
+			line-height: 4.8rem;
     }
   }
 

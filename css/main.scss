@@ -349,6 +349,12 @@ footer {
         object-position: center;
       }
     }
+
+    @media screen and (max-width: $mobile){
+      .testimonial-text{
+        font-size: 1.8rem;
+      }
+    }
   }
 }
 

@@ -19,8 +19,8 @@
   grid-template-rows: 100vh;
   // padding: 0 160px;
 
-  a{
-    img{
+  a {
+    img {
       margin-right: 8px;
       margin-bottom: 8px;
       max-width: 192px;
@@ -147,7 +147,7 @@
       // background-color: #222;
       background-image: url("../img/circles.svg");
       background-repeat: no-repeat;
-      background-size: auto 90%;
+      background-size: 80% auto;
       background-position: center;
       width: 100%;
       height: 100%;
@@ -191,6 +191,63 @@
           opacity: 0;
           transform: translateY(60vh);
           -webkit-transform: translateY(60vh);
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    grid-template-rows: 100%;
+    .content {
+      padding-left: 40px;
+      h1 {
+        font-size: 2.8rem;
+      }
+      h4 {
+        font-size: 1.4rem;
+      }
+      p {
+        margin-top: 8px;
+      }
+
+      .bottom {
+        padding-left: 40px;
+      }
+    }
+  }
+
+  @media screen and (max-width: $mobile){
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .mockup-container{
+      padding-top: 32px;
+
+      .mockup-box{
+        height: 100vh;
+      }
+    }
+
+    .content{
+      padding-top: 32px;
+      padding-left: 0;
+      text-align: center;
+
+      .bottom{
+        position: static;
+        padding-left: 0;
+        margin-top: 24px;
+
+        .socials li:first-child{
+          margin-left: 0;
+        }
+
+        .mouse{
+          display: none;
         }
       }
     }

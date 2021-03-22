@@ -529,7 +529,7 @@ section, .main-footer {
 #hero .mockup-container .mockup-box {
   background-image: url("../img/circles.svg");
   background-repeat: no-repeat;
-  background-size: auto 90%;
+  background-size: 80% auto;
   background-position: center;
   width: 100%;
   height: 100%;
@@ -583,6 +583,66 @@ section, .main-footer {
     opacity: 0;
     transform: translateY(60vh);
     -webkit-transform: translateY(60vh);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #hero {
+    -ms-grid-rows: 100%;
+        grid-template-rows: 100%;
+  }
+  #hero .content {
+    padding-left: 40px;
+  }
+  #hero .content h1 {
+    font-size: 2.8rem;
+  }
+  #hero .content h4 {
+    font-size: 1.4rem;
+  }
+  #hero .content p {
+    margin-top: 8px;
+  }
+  #hero .content .bottom {
+    padding-left: 40px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  #hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 100px;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #hero .mockup-container {
+    padding-top: 32px;
+  }
+  #hero .mockup-container .mockup-box {
+    height: 100vh;
+  }
+  #hero .content {
+    padding-top: 32px;
+    padding-left: 0;
+    text-align: center;
+  }
+  #hero .content .bottom {
+    position: static;
+    padding-left: 0;
+    margin-top: 24px;
+  }
+  #hero .content .bottom .socials li:first-child {
+    margin-left: 0;
+  }
+  #hero .content .bottom .mouse {
+    display: none;
   }
 }
 
@@ -2138,6 +2198,12 @@ section, .main-footer {
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
 
+@media screen and (min-width: 992px) {
+  .video-hero--content {
+    margin: 345px 0;
+  }
+}
+
 .video-hero--content h2 {
   font-size: 34px;
   margin: 0 0 10px;
@@ -2401,6 +2467,24 @@ section, .main-footer {
 #home-features .home-feature .content h3 {
   font-size: 1.8rem;
   font-weight: 700;
+}
+
+@media screen and (max-width: 992px) {
+  #home-features .home-feature {
+    margin: 24px 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #home-features {
+    padding-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  #home-features {
+    padding-top: 32px;
+  }
 }
 
 #home-about {
@@ -2707,5 +2791,9 @@ footer ul li a:hover, footer ul li a:focus {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+.ql-editor p strong {
+  font-size: 2.8rem !important;
 }
 /*# sourceMappingURL=main.css.map */

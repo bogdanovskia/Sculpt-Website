@@ -201,6 +201,11 @@ section, .main-footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .breadcrumbs li::before {
@@ -260,7 +265,7 @@ section, .main-footer {
   margin-top: 32px;
   padding: 14px 24px;
   padding-top: 15px;
-  border-radius: 7px;
+  border-radius: 100px;
   font-weight: 600;
   font-size: 2rem;
   letter-spacing: 0.1rem;
@@ -636,10 +641,17 @@ section, .main-footer {
         -ms-flex-align: center;
             align-items: center;
   }
+  #hero .content .download-buttons .iosdownload img,
+  #hero .content .download-buttons .androiddownload img {
+    height: 50px !important;
+  }
   #hero .content .bottom {
     position: static;
     padding-left: 0;
     margin-top: 24px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   #hero .content .bottom .socials li:first-child {
     margin-left: 0;
@@ -1540,9 +1552,15 @@ section, .main-footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-grid-columns: auto 40px;
-      grid-template-columns: auto 40px;
+  -ms-grid-columns: auto 18px;
+      grid-template-columns: auto 18px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 769px) {
+  .accordion .question .question-header {
+    padding: 24px;
+  }
 }
 
 .accordion .question .question-header h4 {
@@ -1891,6 +1909,13 @@ section, .main-footer {
       grid-template-columns: 1fr 1fr;
   gap: 40px;
   margin-bottom: 56px;
+}
+
+@media screen and (max-width: 769px) {
+  #questions-wrapper .questions-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 #questions-wrapper .questions-block h3 {
@@ -2257,6 +2282,12 @@ section, .main-footer {
   }
 }
 
+@media screen and (max-width: 769px) {
+  .video-hero--content {
+    margin: 125px 0;
+  }
+}
+
 .video-hero--content h2 {
   font-size: 34px;
   margin: 0 0 10px;
@@ -2565,6 +2596,15 @@ section, .main-footer {
 #home-about {
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+@media screen and (max-width: 992px) {
+  #home-about {
+    text-align: center;
+  }
+  #home-about .img-cont {
+    margin-bottom: 24px;
+  }
 }
 
 #subscribe-box {

@@ -63,6 +63,8 @@ section, .main-footer{
     list-style: none;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
     
     li{
         &::before{

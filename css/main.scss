@@ -73,6 +73,14 @@
 #home-about {
   padding-top: 32px;
   padding-bottom: 32px;
+
+  @media screen and (max-width: $tablet){
+    text-align: center;
+
+    .img-cont{
+      margin-bottom: 24px;
+    }
+  }
 }
 
 #subscribe-box {

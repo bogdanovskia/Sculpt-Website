@@ -517,6 +517,7 @@ section, .main-footer {
   height: 100%;
   padding-top: 130px;
   padding-bottom: 12px;
+  overflow: hidden;
 }
 
 #hero .mockup-container .circle-holder {
@@ -631,7 +632,9 @@ section, .main-footer {
   #hero .content {
     padding-top: 32px;
     padding-left: 0;
-    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #hero .content .bottom {
     position: static;
@@ -697,6 +700,15 @@ section, .main-footer {
   position: absolute;
   top: 0;
   right: 42px;
+}
+
+@media screen and (max-width: 992px) {
+  #home-faq .img-cont {
+    margin-top: 32px;
+  }
+  #home-faq .img-cont .faq-img {
+    left: 0;
+  }
 }
 
 .blogpost-card {
@@ -918,6 +930,16 @@ section, .main-footer {
 #home-blog-carousel .slick-next {
   left: auto;
   right: 40px;
+}
+
+@media screen and (max-width: 769px) {
+  #home-blog-carousel .slick-prev, #home-blog-carousel .slick-next {
+    left: 15px;
+  }
+  #home-blog-carousel .slick-next {
+    left: auto;
+    right: 20px;
+  }
 }
 
 .slick-cont .blogpost-card {
@@ -1193,6 +1215,7 @@ section, .main-footer {
 .blog-post-wrapper .post-content img {
   width: 100%;
   margin: 32px 0;
+  height: auto !important;
 }
 
 .blog-post-wrapper .post-header {
@@ -1659,10 +1682,40 @@ section, .main-footer {
 
 .carousel-cell .mockup-cont img {
   height: 100%;
+  display: block;
+  margin: 0 auto;
   transition-duration: 0.2s;
   -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
+}
+
+@media screen and (max-width: 992px) {
+  .carousel-cell {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .carousel-cell .content {
+    padding: 32px;
+    text-align: center;
+  }
+  .carousel-cell .mockup-cont {
+    height: auto;
+  }
+  .carousel-cell .mockup-cont img {
+    width: 300px;
+    height: auto;
+    max-width: 80%;
+  }
+}
+
+.flickity-page-dots {
+  margin-top: 32px;
 }
 
 .carousel-cell.is-previous {

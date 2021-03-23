@@ -191,6 +191,17 @@
     left: auto;
     right: 40px;
   }
+
+  @media screen and (max-width: $mobile){
+    .slick-prev{
+      left: 15px;
+    }
+
+    .slick-next{
+      left: auto;
+      right: 20px;
+    }
+  }
 }
 
 .slick-cont {
@@ -437,6 +448,7 @@
     img {
       width: 100%;
       margin: 32px 0;
+      height: auto!important;
     }
   }
 

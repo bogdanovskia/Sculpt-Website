@@ -52,5 +52,13 @@
       top: 0;
       right: 42px;
     }
+
+    @media screen and (max-width: $tablet){
+      margin-top: 32px;
+
+      .faq-img{
+        left: 0;
+      }
+    }
   }
 }

@@ -32,9 +32,35 @@
 
     img {
       height: 100%;
+      display: block;
+      margin: 0 auto;
       @include transition(0.2s);
     }
   }
+
+  @media screen and (max-width: $tablet){
+    display: flex;
+    flex-direction: column;
+
+    .content{
+      padding: 32px;
+      text-align: center;
+    }
+
+    .mockup-cont{
+      height: auto;
+
+      img{
+        width: 300px;
+        height: auto;
+        max-width: 80%;
+      }
+    }
+  }
+}
+
+.flickity-page-dots{
+  margin-top: 32px;
 }
 
 // .carousel-cell.is-selected {

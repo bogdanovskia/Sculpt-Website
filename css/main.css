@@ -1545,10 +1545,12 @@ section, .main-footer {
   bottom: 24px;
   width: 80%;
   text-align: center;
+  z-index: 998;
 }
 
 .navigation.opened .custom-logo-link {
   position: fixed;
+  z-index: 999;
 }
 
 .navigation.opened .nav-links {
@@ -1566,7 +1568,7 @@ section, .main-footer {
       -ms-flex-direction: column;
           flex-direction: column;
   opacity: 1;
-  background-color: #fff;
+  background-color: #fff !important;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1574,6 +1576,7 @@ section, .main-footer {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  z-index: 990;
 }
 
 .navigation.opened .nav-links li {

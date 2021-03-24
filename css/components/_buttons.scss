@@ -2,12 +2,13 @@
   text-decoration: none;
   display: inline-block;
   margin-top: 32px;
-  padding: 14px 24px;
+  padding: 14px 28px;
   padding-top: 15px;
   border-radius: 100px;
   font-weight: 600;
   font-size: 2rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
   background-color: $primary-color-dark;
   color: #fff;
   border: 0;
@@ -52,8 +53,8 @@
   &.navbar-btn {
     margin: 0;
     padding: 0 24px;
-    height: 56px;
-    line-height: 56px;
+    height: 52px;
+    line-height: 54px;
     flex-grow: 0;
     flex-shrink: 0;
 

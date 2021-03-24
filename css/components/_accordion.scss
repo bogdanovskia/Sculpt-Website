@@ -76,6 +76,10 @@
         @include transition(.3s);
         transition-delay: .4s;
       }
+
+      @media screen and (max-width: $mobile){
+        padding: 24px;
+      }
     }
 
     &.opened {

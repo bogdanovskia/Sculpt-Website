@@ -15,6 +15,34 @@
   align-items: center;
   grid-template-rows: 600px;
 
+  .download-buttons .iosdownload,
+  .download-buttons .androiddownload {
+    img {
+      height: 50px;
+    }
+
+    @media screen and (max-width: 575px) {
+      margin: 0;
+      margin-bottom: 8px;
+      img {
+        height: auto;
+        width: 192px;
+      }
+    }
+  }
+
+  .download-buttons .iosdownload img,
+  .download-buttons .androiddownload img {
+    height: 50px;
+
+    @media screen and (max-width: 575px) {
+      height: auto;
+      width: 192px;
+      margin: 0;
+      margin-bottom: 8px;
+    }
+  }
+
   .content {
     padding: 40px 0;
     padding-left: 88px;
@@ -38,19 +66,19 @@
     }
   }
 
-  @media screen and (max-width: $tablet){
+  @media screen and (max-width: $tablet) {
     display: flex;
     flex-direction: column;
 
-    .content{
+    .content {
       padding: 32px;
       text-align: center;
     }
 
-    .mockup-cont{
+    .mockup-cont {
       height: auto;
 
-      img{
+      img {
         width: 300px;
         height: auto;
         max-width: 80%;
@@ -59,7 +87,7 @@
   }
 }
 
-.flickity-page-dots{
+.flickity-page-dots {
   margin-top: 32px;
 }
 
@@ -69,7 +97,7 @@
 
 .carousel-cell.is-previous {
   // background: #f09;
-  opacity: .5;
+  opacity: 0.5;
 
   .mockup-cont {
     img {
@@ -82,7 +110,7 @@
 .carousel-cell.is-next {
   // background: #09f;
   direction: rtl;
-  opacity: .5;
+  opacity: 0.5;
 
   .mockup-cont {
     text-align: left;

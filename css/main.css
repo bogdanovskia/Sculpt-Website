@@ -263,12 +263,13 @@ section, .main-footer {
   text-decoration: none;
   display: inline-block;
   margin-top: 32px;
-  padding: 14px 24px;
+  padding: 14px 28px;
   padding-top: 15px;
   border-radius: 100px;
   font-weight: 600;
   font-size: 2rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
   background-color: #DE4083;
   color: #fff;
   border: 0;
@@ -312,8 +313,8 @@ section, .main-footer {
 .primary-btn.navbar-btn, .navbar-btn.ghost-btn {
   margin: 0;
   padding: 0 24px;
-  height: 56px;
-  line-height: 56px;
+  height: 52px;
+  line-height: 54px;
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
@@ -908,6 +909,7 @@ section, .main-footer {
 
 #home-blog-carousel {
   position: relative;
+  padding-top: 40px;
 }
 
 #home-blog-carousel .slick-prev, #home-blog-carousel .slick-next {
@@ -1628,6 +1630,12 @@ section, .main-footer {
           transition-delay: .4s;
 }
 
+@media screen and (max-width: 769px) {
+  .accordion .question .question-body {
+    padding: 24px;
+  }
+}
+
 .accordion .question.opened .question-header .plus-minus {
   transition-duration: 0.3s;
   -webkit-transition-duration: 0.3s;
@@ -1675,6 +1683,39 @@ section, .main-footer {
           align-items: center;
   -ms-grid-rows: 600px;
       grid-template-rows: 600px;
+}
+
+.carousel-cell .download-buttons .iosdownload img,
+.carousel-cell .download-buttons .androiddownload img {
+  height: 50px;
+}
+
+@media screen and (max-width: 575px) {
+  .carousel-cell .download-buttons .iosdownload,
+  .carousel-cell .download-buttons .androiddownload {
+    margin: 0;
+    margin-bottom: 8px;
+  }
+  .carousel-cell .download-buttons .iosdownload img,
+  .carousel-cell .download-buttons .androiddownload img {
+    height: auto;
+    width: 192px;
+  }
+}
+
+.carousel-cell .download-buttons .iosdownload img,
+.carousel-cell .download-buttons .androiddownload img {
+  height: 50px;
+}
+
+@media screen and (max-width: 575px) {
+  .carousel-cell .download-buttons .iosdownload img,
+  .carousel-cell .download-buttons .androiddownload img {
+    height: auto;
+    width: 192px;
+    margin: 0;
+    margin-bottom: 8px;
+  }
 }
 
 .carousel-cell .content {
@@ -1737,7 +1778,7 @@ section, .main-footer {
 }
 
 .carousel-cell.is-previous {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .carousel-cell.is-previous .mockup-cont img {
@@ -1747,7 +1788,7 @@ section, .main-footer {
 
 .carousel-cell.is-next {
   direction: rtl;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .carousel-cell.is-next .mockup-cont {
@@ -2605,6 +2646,10 @@ section, .main-footer {
   #home-about .img-cont {
     margin-bottom: 24px;
   }
+}
+
+.home-subscribe {
+  padding-bottom: 80px;
 }
 
 #subscribe-box {

@@ -350,6 +350,7 @@
         height: 28px;
         padding: 0 10px;
         padding-bottom: 1px;
+        margin-bottom: 16px;
         text-transform: uppercase;
         display: inline-block;
         flex-grow: 0;
@@ -390,6 +391,19 @@
           transform: scale(1.05);
           -webkit-transform: scale(1.05);
         }
+      }
+    }
+
+    @media screen and (max-width: 1200px){
+      grid-template-rows: auto;
+    }
+
+    @media screen and (max-width: $mobile){
+      grid-template-columns: 1fr;
+
+      .img-cont{
+        width: 100%;
+        padding-top: 75%;
       }
     }
   }

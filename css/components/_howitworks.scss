@@ -1,4 +1,4 @@
-.content-section{
+.content-section {
   display: grid;
   grid-template-columns: 4fr 6fr;
   gap: 64px;
@@ -6,12 +6,12 @@
   padding-top: 24px;
   padding-bottom: 24px;
 
-  .img-cont{
+  .img-cont {
     width: 100%;
     padding-top: 75%;
     position: relative;
 
-    .img-bg{
+    .img-bg {
       position: absolute;
       right: 0;
       bottom: 40px;
@@ -20,7 +20,7 @@
       background-color: $primary-color-dark;
     }
 
-    .img-holder{
+    .img-holder {
       width: 100%;
       height: 100%;
       position: absolute;
@@ -28,7 +28,7 @@
       left: 0;
       z-index: 200;
 
-      img{
+      img {
         width: 100%;
         height: 100%;
         object-fit: contain;
@@ -45,32 +45,39 @@
     // }
   }
 
-  &:nth-of-type(odd){
-    grid-template-columns: 6fr 4fr;
-    .img-cont{
-      order: -1;
+  &:nth-of-type(odd) {
+    @media screen and (min-width: $tablet) {
+      grid-template-columns: 6fr 4fr;
+      .img-cont {
+        order: -1;
 
-      .img-bg{
-        position: absolute;
-        right: auto;
-        bottom: 40px;
-        left: 0;
-        width: 60%;
-        height: 60%;
-        background-color: $primary-color-dark;
+        .img-bg {
+          position: absolute;
+          right: auto;
+          bottom: 40px;
+          left: 0;
+          width: 60%;
+          height: 60%;
+          background-color: $primary-color-dark;
+        }
       }
     }
   }
+
+  @media screen and (max-width: $tablet){
+    grid-template-columns: 1fr;
+    margin: 48px 0;
+  }
 }
 
-#intro{
+#intro {
   background-color: $light-bg;
   margin-bottom: 64px;
   margin-top: -440px;
   padding-top: 400px;
 }
 
-.main-img{
+.main-img {
   position: relative;
   z-index: 200;
   max-width: 80%;

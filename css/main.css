@@ -263,11 +263,12 @@ section, .main-footer {
   text-decoration: none;
   display: inline-block;
   margin-top: 32px;
-  padding: 14px 28px;
-  padding-top: 15px;
+  padding: 16px 32px;
+  padding-top: 17px;
   border-radius: 100px;
-  font-weight: 600;
-  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
   letter-spacing: 0.15rem;
   text-transform: uppercase;
   background-color: #DE4083;
@@ -312,9 +313,9 @@ section, .main-footer {
 
 .primary-btn.navbar-btn, .navbar-btn.ghost-btn {
   margin: 0;
-  padding: 0 24px;
+  padding: 0 32px;
   height: 52px;
-  line-height: 54px;
+  line-height: 52px;
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
@@ -1129,6 +1130,7 @@ section, .main-footer {
   height: 28px;
   padding: 0 10px;
   padding-bottom: 1px;
+  margin-bottom: 16px;
   text-transform: uppercase;
   display: inline-block;
   -webkit-box-flex: 0;
@@ -1170,6 +1172,24 @@ section, .main-footer {
 .posts-wrapper .featured-post-big:hover .img-box img, .posts-wrapper .featured-post-big:focus .img-box img {
   transform: scale(1.05);
   -webkit-transform: scale(1.05);
+}
+
+@media screen and (max-width: 1200px) {
+  .posts-wrapper .featured-post-big {
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .posts-wrapper .featured-post-big {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .posts-wrapper .featured-post-big .img-cont {
+    width: 100%;
+    padding-top: 75%;
+  }
 }
 
 .blog-post-wrapper {
@@ -1358,6 +1378,8 @@ section, .main-footer {
   width: 110px;
   display: inline-block;
   margin-right: 24px;
+  position: relative;
+  z-index: 999;
 }
 
 .navigation .navigation-left .custom-logo-link img {
@@ -1511,6 +1533,55 @@ section, .main-footer {
   .navigation .hamburger {
     display: none;
   }
+}
+
+.navigation.opened .navbar-btn {
+  display: inline-block;
+  opacity: 1;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 24px;
+  width: 80%;
+  text-align: center;
+}
+
+.navigation.opened .custom-logo-link {
+  position: fixed;
+}
+
+.navigation.opened .nav-links {
+  padding: 24px;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  opacity: 1;
+  background-color: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.navigation.opened .nav-links li {
+  margin: 12px 0;
+}
+
+.navigation.opened .nav-links li a {
+  font-size: 1.8rem;
 }
 
 @media screen and (max-width: 1340px) {
@@ -2116,25 +2187,33 @@ section, .main-footer {
      object-position: center;
 }
 
-.content-section:nth-of-type(odd) {
-  -ms-grid-columns: 6fr 4fr;
-      grid-template-columns: 6fr 4fr;
+@media screen and (min-width: 992px) {
+  .content-section:nth-of-type(odd) {
+    -ms-grid-columns: 6fr 4fr;
+        grid-template-columns: 6fr 4fr;
+  }
+  .content-section:nth-of-type(odd) .img-cont {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .content-section:nth-of-type(odd) .img-cont .img-bg {
+    position: absolute;
+    right: auto;
+    bottom: 40px;
+    left: 0;
+    width: 60%;
+    height: 60%;
+    background-color: #DE4083;
+  }
 }
 
-.content-section:nth-of-type(odd) .img-cont {
-  -webkit-box-ordinal-group: 0;
-      -ms-flex-order: -1;
-          order: -1;
-}
-
-.content-section:nth-of-type(odd) .img-cont .img-bg {
-  position: absolute;
-  right: auto;
-  bottom: 40px;
-  left: 0;
-  width: 60%;
-  height: 60%;
-  background-color: #DE4083;
+@media screen and (max-width: 992px) {
+  .content-section {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin: 48px 0;
+  }
 }
 
 #intro {
@@ -2794,6 +2873,12 @@ footer ul li a {
 footer ul li a:hover, footer ul li a:focus {
   color: #282828;
   text-decoration: none;
+}
+
+@media screen and (max-width: 992px) {
+  footer .col-lg-3 {
+    margin-bottom: 32px;
+  }
 }
 
 .pagination {

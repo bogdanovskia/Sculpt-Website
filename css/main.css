@@ -3034,6 +3034,16 @@ footer ul li a:hover, footer ul li a:focus {
   right: 40px;
 }
 
+@media screen and (max-width: 769px) {
+  #testimonials .slick-prev, #testimonials .slick-next {
+    left: 20px;
+  }
+  #testimonials .slick-next {
+    left: auto;
+    right: 20px;
+  }
+}
+
 #testimonials .testimonial-box {
   text-align: center;
   padding: 28px;

@@ -354,21 +354,15 @@
         autoplay: true,
         autoplaySpeed: 2000,
         prevArrow: $('.slick-prev'),
-        nextArrow: $('.slick-next')
-        // responsive: [
-        //   {
-        //     breakpoint: 1024,
-        //     settings: {
-        //       slidesToShow: 2
-        //     }
-        //   },
-        //   {
-        //     breakpoint: 769,
-        //     settings: {
-        //       slidesToShow: 1
-        //     }
-        //   }
-        // ]
+        nextArrow: $('.slick-next'),
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              centerMode: false
+            }
+          }
+        ]
       });
     });
   </script>

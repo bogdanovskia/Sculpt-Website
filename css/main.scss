@@ -335,6 +335,17 @@ footer {
     right: 40px;
   }
 
+  @media screen and (max-width: $mobile){
+    .slick-prev{
+      left: 20px;
+    }
+
+    .slick-next{
+      left: auto;
+      right: 20px;
+    }
+  }
+
   .testimonial-box {
     text-align: center;
     padding: 28px;

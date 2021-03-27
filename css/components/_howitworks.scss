@@ -68,6 +68,12 @@
     grid-template-columns: 1fr;
     margin: 48px 0;
   }
+
+  @media screen and (min-width: 1360px){
+    p{
+      font-size: 2rem;
+    }
+  }
 }
 
 #intro {

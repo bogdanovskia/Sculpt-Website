@@ -31,15 +31,15 @@
     display: flex;
 
     .custom-logo-link {
-      width: 110px;
       display: inline-block;
       margin-right: 24px;
       position: relative;
       z-index: 999;
+      height: 46px;
 
       img {
-        width: 100%;
-        height: auto !important;
+        width: auto!important;
+        height: 100%!important;
       }
     }
 

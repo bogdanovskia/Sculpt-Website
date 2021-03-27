@@ -16,7 +16,7 @@
       grid-template-columns: auto 18px;
       cursor: pointer;
 
-      @media screen and (max-width: $mobile){
+      @media screen and (max-width: $mobile) {
         padding: 24px;
       }
 
@@ -67,18 +67,14 @@
       padding: 0 24px;
       margin-left: 6px;
       max-height: 0;
-      overflow: 0;
+      overflow: hidden;
       opacity: 0;
-      transition: max-height .5s cubic-bezier(0, 1, 0, 1);
+      transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
 
-      p{
+      p {
         opacity: 0;
-        @include transition(.3s);
-        transition-delay: .4s;
-      }
-
-      @media screen and (max-width: $mobile){
-        padding: 24px;
+        @include transition(0.3s);
+        transition-delay: 0.4s;
       }
     }
 
@@ -100,8 +96,12 @@
         opacity: 1;
         margin-bottom: 8px;
         transition: max-height 1s ease-in-out;
-        p{
+        p {
           opacity: 1;
+        }
+
+        @media screen and (max-width: $mobile) {
+          padding: 24px;
         }
       }
     }

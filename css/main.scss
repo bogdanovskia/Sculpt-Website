@@ -293,6 +293,10 @@ footer {
 
   .iosdownload {
     margin-right: 12px;
+
+    @media screen and (max-width: 390px){
+      margin-right: 0;
+    }
   }
 }
 

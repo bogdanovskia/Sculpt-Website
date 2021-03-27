@@ -60,5 +60,20 @@
         left: 0;
       }
     }
+
+    @media screen and (max-width: $mobile){
+      margin-top: 32px;
+
+      .faq-img{
+        width: 100%;
+        height: auto;
+      }
+
+      .polka{
+        max-width: 100%;
+        top: 0;
+        bottom: auto
+      }
+    }
   }
 }
